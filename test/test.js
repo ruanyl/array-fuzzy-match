@@ -46,3 +46,10 @@ test('should matches first letter of each word', t => {
   const arr = ['bin', 'jiang', 'ji', 'tuan']
   t.true(isMatch(arr, 'jituan'))
 })
+
+test('should matches chinese', t => {
+  const arr = ['滨', '江', '集', '团']
+  t.true(isMatch(arr, '滨江'))
+  t.true(isMatch(arr, '集团'))
+  t.true(isMatch(arr, '滨江集团'))
+})
