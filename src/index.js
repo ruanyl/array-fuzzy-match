@@ -8,7 +8,7 @@ export default (arr, str, customConfig) => {
   let isMatchWord = false
 
   arr.forEach((word, i) => {
-    wordIndexes = wordIndexes.concat(i === 0 ? 0 : arr[i - 1].length)
+    wordIndexes = wordIndexes.concat(i === 0 ? 0 : arr[i - 1].length + wordIndexes[i - 1])
     firstLetters = `${firstLetters}${word.charAt(0).toUpperCase()}`
   })
 

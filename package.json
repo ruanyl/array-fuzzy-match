@@ -1,13 +1,14 @@
 {
   "name": "array-fuzzy-match",
-  "version": "0.1.0",
-  "description": "babel 6 boilerplate",
+  "version": "0.2.0",
+  "description": "array fuzzy match",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/ava --verbose test/* --watch",
     "lint": "./node_modules/.bin/eslint 'src/**/*.js' 'test/**/*.js'",
     "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib",
-    "build:watch": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --watch"
+    "build:watch": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --watch",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

@@ -41,3 +41,8 @@ test('should matches first letter of each word', t => {
   t.true(isMatch(arr, 'ZGZC', config))
   t.true(isMatch(arr, 'GZ', config))
 })
+
+test('should matches first letter of each word', t => {
+  const arr = ['bin', 'jiang', 'ji', 'tuan']
+  t.true(isMatch(arr, 'jituan'))
+})
