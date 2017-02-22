@@ -1,6 +1,12 @@
 # array fuzzy match
 
 ```
+npm i array-fuzzy-match
+```
+
+```
+import isMatch from 'array-fuzzy-match'
+
 test('should return true if matches words', t => {
   const arr = ['zhong', 'guo', 'zhong', 'che']
   t.true(isMatch(arr, 'zhong'))
