@@ -25,10 +25,7 @@
   },
   "homepage": "https://github.com/ruanyl/array-fuzzy-match",
   "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "es6-promise": "^4.0.5",
-    "isomorphic-fetch": "^2.2.1",
-    "pinyin": "^2.8.0"
+    "babel-runtime": "^6.23.0"
   },
   "devDependencies": {
     "ava": "^0.18.2",
