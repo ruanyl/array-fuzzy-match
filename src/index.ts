@@ -1,8 +1,13 @@
-export default (arr, str, customConfig) => {
-  const config = { letterFromStart: true, wordFromStart: false, ...customConfig }
+interface Config {
+  letterFromStart?: boolean
+  wordFromStart?: boolean
+}
+
+export default (arr: string[], str: string, customConfig?: Config) => {
+ const config = { letterFromStart: true, wordFromStart: false, ...customConfig }
 
   const allStr = arr.join('').toUpperCase()
-  let wordIndexes = []
+  let wordIndexes: number[] = []
   let firstLetters = ''
   let isMatchLetter = false
   let isMatchWord = false
